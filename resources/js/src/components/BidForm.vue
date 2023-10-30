@@ -113,15 +113,15 @@
 
 	export default defineComponent({
 		setup() {
-			const form = ref<Object>({
+			const form = ref({
 				name: '',
 				email: '',
 				phone: '',
 				price: 0,
 			});
-			const isLoading = ref<boolean>(false);
+			const isLoading = ref(false);
 
-			const errors = ref<Object[]>([]);
+			const errors = ref([]);
 
 			const sendRequest = () => {
 				errors.value = [];
